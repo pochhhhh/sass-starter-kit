@@ -3,9 +3,16 @@
 Make sure to have the following installed globally and locally to your project:
 
 * Node JS
+* gulp
 * gulp-sass
 * node-sass
-* Browsersync
+* Browser-sync
+
+Commands:
+
+npm install gulp
+npm install gulp-sass node-sass --save-dev
+npm install browser-sync
 
 The purpose of this starter kit is to ease the creation of front end mock-ups, which
 can be then be converted into WordPress themes later on. This starter kit has a Sass
