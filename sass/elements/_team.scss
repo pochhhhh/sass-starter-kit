@@ -1,0 +1,56 @@
+#the-team{
+
+  background: purple;
+
+  .container{
+
+    height: auto;
+    width: 100vw;
+    background: yellow;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:0.8rem;
+
+  }
+
+  .team-member{
+
+    height: 60vh;
+    background: red;
+    padding:5%;
+
+    .photo{
+
+      height: 80%;
+      background: lime;
+
+      img{
+
+        height: 100%;
+        width: 100%;
+
+      }
+
+    }
+
+    .name-title{
+
+      height: 20%;
+      background: pink;
+
+      p{
+
+        position: relative;
+        bottom:1rem;
+
+
+      }
+
+    }
+
+
+  }
+
+
+
+}

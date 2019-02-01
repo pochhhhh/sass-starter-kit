@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width">
+    <!-- name="viewport" content="width=device-width" is SUPER important to put in your
+    meta tag. If you don't put this, your CSS media queries will not work in the chrome
+    developer tools mobile device emulation screen -->
+    <title>Rigel Creative</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+  </head>
+  <body id="body">
+    <header>
+      <div class="loading-screen">
+        <svg preserveAspectRatio="xMidYMin" viewBox="0 0 500 500"><!-- preserveAspectRatio="xMidYMin" is what allows the circle to always stay in the center of the svg element regardless of viewport size -->
+          <circle stroke="none" fill="none" stroke-width="4.5"/>
+          <circle class="progress-value" fill="none" stroke-width="4.5"/>
+          <text x="50%" y="50%" class="circle-caption title company-title">Rigel Creative</text><!-- transform="rotate(90)" x="250" y="-250"  -->
+        </svg>
+      </div>
+      <div class="navbar-toggle-background-overlay">
+
+      </div>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo navbar-fixed-top">
+        <a class="navbar-brand" href="index.html">Rigel Creative</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span class="custom-icon">
+            <i class="fa fa-navicon"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="works.html">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vision.html">Vision</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">The Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="portfolio-list">
+        <div class="container">
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/7AB7/production/_104051413_gettyimages-858635444.jpg" alt="Chimes Clocks"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Chimes Clocks</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Steele University"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Steele University</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/320335/pexels-photo-320335.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Piano Buff"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Piano Buff</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1353346/pexels-photo-1353346.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Richard Stein Investors"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Richard Stein Investors</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1282270/pexels-photo-1282270.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Indigo Recruitment"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Indigo Recruitment</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="./img/featured-work-1.jpeg" alt="Megalife"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Megalife</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="./img/featured-work-2.jpeg" alt="Sapphire Resort"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Sapphire Resort</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="./img/featured-work-3.jpeg" alt="Jameson Solicitors"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Jameson Solicitors</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="./img/featured-work-4.jpeg" alt="Bench Clothing"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Bench Clothing</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="./img/featured-work-5.jpeg" alt="Coca Cola"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Coca Cola</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1455962/pexels-photo-1455962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Imperial Dragon"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Imperial Dragon</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/159358/construction-site-build-construction-work-159358.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Lyons Construction"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Lyons & Co. Construction</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/681333/pexels-photo-681333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Clyde McEwen Estates"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Clyde McEwen Estates</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1643326/pexels-photo-1643326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aware About Autism"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Aware About Autism</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aleenta Resort"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Aleenta Resort</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://media.rbl.ms/image?u=%2Ffiles%2F2016%2F08%2F12%2F636065617172688036-2124156116_merci.png&ho=https%3A%2F%2Faz616578.vo.msecnd.net&s=505&h=eed6fef84f0e0710766c2b67876d31aa810d332e07a5fee1f49c9eab09f0fa7f&size=980x&c=3929064959" alt="Crystal Interpreting & Translation Services"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Crystal Interpreting Services</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://fcbstudios.com/images/Raw/0-feilden-clegg-bradley-studios_birmingham-conservatoire.jpg" alt="Northbank Conservatoire"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Northbank Conservatoire</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/161017/kickboxer-girl-moscow-thai-161017.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Tipamat Muay Thai Academy"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Tipamat Muay Thai Academy</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1426939/pexels-photo-1426939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bell Communications Ltd"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Bell Communications Ltd</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://www.newcriterion.com/cm/images//Kissin-2-Credit-Photo-by-Steve-J.-Sherman.jpg" alt="Evgeny Kissin - Pianist"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Evgeny Kissin - Pianist</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Nomadic Cruise Tours"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Nomadic Cruise Tours</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/17840/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Stronghold Barbell Club"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Stronghold Barbell Club</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/268283/pexels-photo-268283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bliss Centre of Ayurveda"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Bliss Center of Ayurveda</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Highgate & Neilson Development"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Highgate & Neilson Development</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1153976/pexels-photo-1153976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Kinabukasang Liwanag Outreach"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Kinabukasang Liwanag Outreach</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Studio Nebula"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Studio Nebula</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/6067/coffee-flower-reading-magazine.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Passionista Magazine"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Passionista Magazine</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="MBTI Aware"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>MBTI Aware</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/889709/pexels-photo-889709.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Airsoft Universe"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Airsoft Universe</h3></a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="image-thumbnail">
+              <a href="#"><img src="https://images.pexels.com/photos/744318/pexels-photo-744318.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Anderson Lane Music Studios"></a>
+            </div>
+            <div class="project-title">
+              <p>CLIENT WORK</p>
+              <a href="#" target="_blank"><h3>Anderson Lane Music Studios</h3></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="info">
+        <p>contact@rigelcreative.com</p>
+        <p>+44123456789</p>
+        <p>Rigel Creative Inc.</p>
+        <p>123 Star Lane</p>
+        <p>SW3 3BB</p>
+      </div>
+      <div class="social-media-panel">
+        <h3>Follow Us</h3>
+        <div class="container">
+          <div class="circle">
+            <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+          </div>
+          <div class="circle">
+            <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+          </div>
+          <div class="circle">
+            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+          </div>
+          <div class="circle">
+            <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="scripts.js"></script> <!-- Any javascript that involves modular imports should have type attribute selected as "module" -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+  </body>
+</html>

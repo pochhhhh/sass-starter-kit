@@ -1,0 +1,46 @@
+nav{
+
+  .custom-icon{
+
+    color:white;
+    font-size: 2.2rem;
+
+  }
+
+
+}
+
+
+.navbar-toggler{
+
+background: none !important;
+border: none !important;
+
+}
+
+.navbar-toggler-icon{
+
+
+
+}
+
+#navbarText{
+
+
+}
+
+.navbar-toggle-background-overlay{
+
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  left:0;
+  //background: red;
+  z-index: 0; //If a higher number, it will block top of works page
+  transition: 0.3s ease;
+
+
+}

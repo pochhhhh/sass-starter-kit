@@ -1,3 +1,13 @@
+@import "tables";
+@import "front-page";
+@import "loading-screen";
+@import "lists";
+@import "works";
+@import "team";
+@import "vision";
+@import "footer";
+
+
 html {
 	box-sizing: border-box;
 }
@@ -10,8 +20,13 @@ html {
 
 body {
 
-	 background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-	 
+	 background: $color__background-body;
+	 transition: 0.5s ease; /* Fallback for when there is no custom background color defined. */
+	 height: auto;
+	 margin: 0;
+	 padding: 0;
+	 overflow: hidden;//While you have loading screen
+
 }
 
 hr {
@@ -21,15 +36,75 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-@import "lists";
-
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 }
 
-figure {
-	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+nav{
+
+	visibility: hidden;
+
+
 }
 
-@import "tables";
+main{
+
+background: none;
+height: auto;
+width: auto;
+position: relative;
+top:0vh;
+z-index: 0; /* Never use -1 otherwise it'll mess up the rest of the child element's z-index positions and make links not clickable. More info can be found here: https://stackoverflow.com/questions/6365448/google-chrome-not-respecting-z-index*/
+
+}
+
+
+/* My own code */
+
+h3, ul, li{
+
+	font-family: 'Questrial', sans-serif;
+
+}
+
+svg text{
+
+  text-anchor: middle;
+	fill:white;
+  font-size:2.4rem;
+  x:50%;
+  font-family: Staatliches;
+  letter-spacing: .1rem;
+
+
+}
+
+.circle-caption-small{
+
+  font-size: 1.2rem;
+	font-family: 'Questrial', sans-serif;
+
+}
+
+.explore-recent-works{
+
+	color:red;
+
+}
+
+.navbar-brand{
+
+	font-family: Staatliches;
+	letter-spacing: 0.1em;
+
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+
+
+
+}

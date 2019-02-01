@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: sass-starter-kit
 Theme URI: http://underscores.me/
@@ -51,6 +52,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Staatliches");
 html {
   line-height: 1.15;
   /* 1 */
@@ -360,68 +362,222 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  color: green; }
-
-p {
-  margin-bottom: 1.5em; }
-
-dfn, cite, em, i {
-  font-style: italic; }
-
-blockquote {
-  margin: 0 1.5em; }
-
-address {
-  margin: 0 0 1.5em; }
-
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6em; }
-
-code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
-  font-size: 0.9375rem; }
-
-abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help; }
-
-mark, ins {
-  background: #fff9c0;
-  text-decoration: none; }
-
-big {
-  font-size: 125%; }
+  color: navy !important;
+  font-family: 'Staatliches' !important; }
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html {
-  box-sizing: border-box; }
+.showcase {
+  height: 102vh;
+  width: 100%;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-attachment: fixed;
+  position: relative; }
+  .showcase .scroll-sign {
+    height: 5vh;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 0;
+    transform: rotate(-90deg); }
+    .showcase .scroll-sign p {
+      color: white; }
 
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
+.darkener {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%; }
 
-body {
-  background: navy;
-  /* Fallback for when there is no custom background color defined. */ }
+.frontpage__services {
+  height: 70vh;
+  background: #F9F9F9;
+  position: relative;
+  z-index: 1;
+  font-weight: 800; }
+  .frontpage__services h3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gray !important; }
+  .frontpage__services ul {
+    list-style: none;
+    top: 50%;
+    position: relative;
+    color: black; }
+    .frontpage__services ul a {
+      color: gray;
+      position: relative; }
+  .frontpage__services .container {
+    height: 100%;
+    width: 100%;
+    background: #F9F9F9; }
+  .frontpage__services .link {
+    cursor: pointer; }
 
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em; }
+.recent__works {
+  height: 100vh;
+  background: white;
+  position: relative; }
+  .recent__works .recent__work__image {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    transition: 2.6s ease; }
+  .recent__works #project-1 {
+    opacity: 1; }
+  .recent__works #project-2 {
+    opacity: 0; }
+  .recent__works #project-3 {
+    opacity: 0; }
+  .recent__works #project-4 {
+    opacity: 0; }
+  .recent__works #project-5 {
+    opacity: 0; }
+  .recent__works h1 {
+    text-align: center;
+    color: red !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .recent__works .panel {
+    height: 50px;
+    width: 50vw;
+    background: none;
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px; }
+    .recent__works .panel .recent__work {
+      height: .5rem;
+      width: .5rem;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: gray; }
+    .recent__works .panel .active {
+      background: white;
+      height: .8rem;
+      width: .8rem; }
+  .recent__works .cycle-buttons {
+    height: 5vh;
+    width: 80%;
+    margin: 0 auto !important;
+    background: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+    .recent__works .cycle-buttons button {
+      border: none; }
+    .recent__works .cycle-buttons p {
+      color: white;
+      font-weight: 800;
+      font-size: 2.2rem; }
+    .recent__works .cycle-buttons .previous {
+      position: relative;
+      left: 0;
+      background: none; }
+    .recent__works .cycle-buttons .next {
+      position: absolute;
+      right: 0;
+      background: none; }
+
+svg {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: none;
+  margin: auto;
+  max-height: 100vh; }
+  svg circle {
+    cx: 250;
+    cy: 250;
+    r: 200; }
+  svg .recent-work {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem; }
+  svg .explore-recent-works {
+    text-align: justify; }
+    svg .explore-recent-works a {
+      color: white;
+      font-size: 1.4rem; }
+    svg .explore-recent-works p {
+      font-family: 'Questrial', sans-serif; }
+
+@media (min-width: 375px) {
+  /* Media queries should come last after original selectors otherwise it won't work */
+  .circle-caption {
+    /*fill:cyan; */ } }
+
+@media (max-width: 450px) {
+  svg {
+    top: 10%; } }
+
+/*
+
+To make the loading screen work, we have to manipulate the following DOM
+elements:
+
+body element - set overflow to hidden while load then after, set overflow to visible
+nav element - set visibility to hidden while load then after, set visibility to visible
+loading-screen class - set visibility to visible while load then after, set visibility to hidden
+
+
+*/
+.loading-screen {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transition: 1.4s ease;
+  /*
+
+  Get circumfrence with:
+
+  2 * π * R  = C
+
+  example if R is 54:
+
+  2 * π * 54 ≈ 339.292
+
+  Get percentage of a circumfrence:
+
+  1256.636 * (1 - 0.6) ≈ 502.6544
+
+              ^^^
+          represents 40%
+
+  */ }
+  .loading-screen .progress-value {
+    stroke-dasharray: 1256.636;
+    animation: progress 2.8s;
+    stroke-dashoffset: 0;
+    stroke: cyan; }
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 1256.636;
+    stroke: #0892D0; }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #7DF9FF; } }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -443,15 +599,183 @@ dt {
 dd {
   margin: 0 1.5em 1.5em; }
 
+#portfolio-list {
+  background: none;
+  height: auto;
+  width: 100vw; }
+  #portfolio-list .container {
+    background: none;
+    position: relative;
+    top: 10vh;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+    padding: 5%;
+    visibility: hidden;
+    transition: 1.4s ease; }
+    #portfolio-list .container img {
+      height: 100%;
+      width: 100%;
+      background-size: 100% 100%; }
+  #portfolio-list .portfolio-item {
+    height: 60vh;
+    width: 100%;
+    position: relative; }
+    #portfolio-list .portfolio-item .image-thumbnail {
+      height: 70%;
+      width: 100%; }
+    #portfolio-list .portfolio-item .project-title {
+      padding: 0.8rem;
+      position: relative; }
+      #portfolio-list .portfolio-item .project-title p {
+        color: gray;
+        font-family: Staatliches; }
+      #portfolio-list .portfolio-item .project-title h3 {
+        color: white !important;
+        top: 1.5rem; }
+
+#the-team {
+  background: purple; }
+  #the-team .container {
+    height: auto;
+    width: 100vw;
+    background: yellow;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.8rem; }
+  #the-team .team-member {
+    height: 60vh;
+    background: red;
+    padding: 5%; }
+    #the-team .team-member .photo {
+      height: 80%;
+      background: lime; }
+      #the-team .team-member .photo img {
+        height: 100%;
+        width: 100%; }
+    #the-team .team-member .name-title {
+      height: 20%;
+      background: pink; }
+      #the-team .team-member .name-title p {
+        position: relative;
+        bottom: 1rem; }
+
+#vision {
+  height: auto;
+  width: 100vw; }
+  #vision .content-1 {
+    height: 100vh;
+    background: yellow; }
+  #vision .content-2 {
+    height: 100vh;
+    background: red; }
+  #vision .content-3 {
+    height: 100vh;
+    background: blue; }
+
+footer {
+  height: 100vh;
+  width: 100vw;
+  background: #1C1C1C;
+  position: relative;
+  margin-top: 15vh;
+  color: white; }
+  footer .info, footer .social-media-panel {
+    padding: 10%; }
+  footer .info {
+    width: 100%;
+    height: 40%; }
+  footer .social-media-panel {
+    height: 30%;
+    width: 100%; }
+    footer .social-media-panel h3 {
+      color: white !important; }
+    footer .social-media-panel .container {
+      height: 60%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5%;
+      position: relative;
+      top: 0.5rem; }
+    footer .social-media-panel .circle {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      background: navy; }
+      footer .social-media-panel .circle a {
+        color: white !important; }
+      footer .social-media-panel .circle i {
+        position: relative;
+        top: 0.8rem;
+        left: 1.0rem; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit; }
+
+body {
+  background: navy !important;
+  transition: 0.5s ease;
+  /* Fallback for when there is no custom background color defined. */
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
 
-figure {
-  margin: 1em 0;
-  /* Extra wide images within figure tags don't overflow the content area. */ }
+nav {
+  visibility: hidden; }
+
+main {
+  background: none;
+  height: auto;
+  width: auto;
+  position: relative;
+  top: 0vh;
+  z-index: 0;
+  /* Never use -1 otherwise it'll mess up the rest of the child element's z-index positions and make links not clickable. More info can be found here: https://stackoverflow.com/questions/6365448/google-chrome-not-respecting-z-index*/ }
+
+/* My own code */
+h3, ul, li {
+  font-family: 'Questrial', sans-serif; }
+
+svg text {
+  text-anchor: middle;
+  fill: white;
+  font-size: 2.4rem;
+  x: 50%;
+  font-family: Staatliches;
+  letter-spacing: .1rem; }
+
+.circle-caption-small {
+  font-size: 1.2rem;
+  font-family: 'Questrial', sans-serif; }
+
+.explore-recent-works {
+  color: red; }
+
+.navbar-brand {
+  font-family: Staatliches;
+  letter-spacing: 0.1em; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -530,87 +854,24 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+nav .custom-icon {
+  color: white;
+  font-size: 2.2rem; }
 
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+.navbar-toggler {
+  background: none !important;
+  border: none !important; }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+.navbar-toggle-background-overlay {
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease; }
 
 /*--------------------------------------------------------------
 # Accessibility

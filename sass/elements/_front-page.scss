@@ -1,0 +1,313 @@
+.showcase{
+
+height: 102vh;
+width:100%;
+background-size: 100% 100%;
+opacity: 0;
+transition: 0.5s ease;
+background-attachment: fixed;
+position: relative;
+
+
+  .scroll-sign{
+
+    height: 5vh;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    bottom:10%;
+    left:0;
+    transform: rotate(-90deg);
+
+    p{
+
+      color:white;
+
+    }
+
+  }
+
+}
+
+.darkener{
+
+position: relative;
+z-index: 1;
+background: rgba(0, 0, 0, 0.3);
+height:100%;
+width:100%;
+
+
+}
+
+.frontpage__services{
+
+height: 70vh;
+background: #F9F9F9;
+position: relative;
+z-index: 1;
+font-weight: 800;
+
+    h3{
+
+      position: absolute;
+      top:30%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      color: gray !important;
+
+
+    }
+
+    ul{
+
+      list-style: none;
+      top:50%;
+      position: relative;
+      color:black;
+      a{
+
+        color: gray;
+        position: relative;
+
+      }
+
+    }
+
+  .container{
+
+    height: 100%;
+    width:100%;
+    background: #F9F9F9;
+
+  }
+
+  .link{
+
+    cursor: pointer;
+
+  }
+
+}
+
+.recent__works{
+
+height: 100vh;
+background: white;
+position: relative;
+
+  #project-name{
+
+
+  }
+
+  .recent__work__image{
+
+    position: absolute;
+    top:0;
+    z-index: 0;
+    height: 100%;
+    width:100%;
+    background-size: 100% 100%;
+    transition: 2.6s ease;
+
+  }
+
+  #project-1{
+
+    opacity: 1;
+
+
+  }
+
+  #project-2{
+
+    opacity: 0;
+
+  }
+
+  #project-3{
+
+    opacity: 0;
+
+  }
+
+  #project-4{
+
+    opacity: 0;
+
+  }
+
+  #project-5{
+
+    opacity: 0;
+
+  }
+
+
+
+  h1{
+
+    text-align: center;
+    color: red !important;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .panel{
+
+    height:50px;
+    width: 50vw;
+    background: none;
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap:5px;
+
+    .recent__work{
+
+      height:.5rem;
+      width:.5rem;
+      border-radius:50%;
+      margin: 0 auto;
+      position: relative;
+      top:50%;
+      transform: translate(-50%, -50%);
+      background: gray;
+
+    }
+
+    .active{
+
+      background: white;
+      height:.8rem;
+      width:.8rem;
+
+    }
+
+
+  }
+
+  .cycle-buttons{
+
+    height:5vh;
+    width: 80%;
+    margin: 0 auto !important;
+    background: none;
+    position: absolute;
+    top:80%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    button{
+
+      border: none;
+
+    }
+
+    p{
+
+      color: white;
+      font-weight: 800;
+      font-size: 2.2rem;
+
+    }
+
+
+    .previous{
+
+      position: relative;
+      left:0;
+      background: none;
+
+    }
+
+    .next{
+
+      position: absolute;
+      right:0;
+      background: none;
+
+    }
+
+
+  }
+
+}
+
+svg{
+
+  position: absolute;
+  display: block;
+  top:0;
+  left:0;
+  z-index: 1;
+  background: none;
+  margin: auto;
+  max-height: 100vh;
+
+  circle{
+
+    cx:250;
+    cy:250;
+    r:200;
+
+  }
+
+  .recent-work{
+
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+
+  }
+
+  .explore-recent-works{
+
+    text-align: justify;
+
+
+    a{
+
+      color:white;
+      font-size: 1.4rem;
+
+    }
+
+    p{
+
+      font-family: 'Questrial', sans-serif;
+
+    }
+
+  }
+
+
+}
+
+@media(min-width: 375px){
+
+/* Media queries should come last after original selectors otherwise it won't work */
+
+  .circle-caption{
+
+    /*fill:cyan; */
+
+  }
+
+
+
+}
+
+@media(max-width: 450px){
+
+  svg{
+
+    top:10%;
+
+  }
+
+}

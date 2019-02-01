@@ -1,0 +1,73 @@
+  #portfolio-list{
+
+  background: none;
+  height: auto;
+  width:100vw;
+
+  .container{
+
+    background: none;
+    position: relative;
+    top:10vh;
+    height:auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+    padding: 5%;
+    visibility: hidden;
+    transition: 1.4s ease;
+
+    img{
+
+      height: 100%;
+      width: 100%;
+      background-size: 100% 100%;
+
+    }
+
+  }
+
+  .portfolio-item{
+
+    height: 60vh;
+    width: 100%;
+    //background: green;
+    position: relative;
+
+    .image-thumbnail{
+
+      height: 70%;
+      width: 100%;
+
+
+    }
+
+    .project-title{
+
+      padding: 0.8rem;
+      position: relative;
+
+      p{
+
+        color: gray;
+        font-family: Staatliches;
+
+      }
+
+      h3{
+
+        color: white !important;
+        top:1.5rem;
+
+      }
+
+
+
+    }
+
+
+  }
+
+
+}

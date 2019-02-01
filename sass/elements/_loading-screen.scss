@@ -1,0 +1,76 @@
+/*
+
+To make the loading screen work, we have to manipulate the following DOM
+elements:
+
+body element - set overflow to hidden while load then after, set overflow to visible
+nav element - set visibility to hidden while load then after, set visibility to visible
+loading-screen class - set visibility to visible while load then after, set visibility to hidden
+
+
+*/
+
+.loading-screen{
+
+  height: 100vh;
+  width: 100vw;
+  //background: black !important;
+  position: absolute;
+  top:0;
+  //z-index: 6;
+  opacity: 1;
+  transition: 1.4s ease;
+  //transform: rotate(-90deg); //If you want to rotate the circle but it will also rotate text
+
+  //Number of PI: 3.14159
+  //circumfrence of circles:  1256.636
+  //progress 40% - 502.6544 - Put this in stroke-dashoffset
+  /*
+
+  Get circumfrence with:
+
+  2 * π * R  = C
+
+  example if R is 54:
+
+  2 * π * 54 ≈ 339.292
+
+  Get percentage of a circumfrence:
+
+  1256.636 * (1 - 0.6) ≈ 502.6544
+
+              ^^^
+          represents 40%
+
+  */
+
+  .progress-value{
+
+
+    stroke-dasharray:1256.636;
+    animation: progress 2.8s;
+    stroke-dashoffset: 0;
+    stroke:cyan;
+
+
+  }
+
+}
+
+@keyframes progress {
+
+  from{
+
+    stroke-dashoffset: 1256.636;
+    stroke: #0892D0;
+  }
+
+  to{
+
+    stroke-dashoffset: 0;
+    stroke:#7DF9FF;
+
+
+  }
+
+}
